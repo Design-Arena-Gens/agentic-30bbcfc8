@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="desktop">
+        <div id="top-bar">
+            <div class="left">
+                <div class="apple-logo"></div>
+                <div class="menu-item">File</div>
+                <div class="menu-item">Edit</div>
+                <div class="menu-item">View</div>
+                <div class="menu-item">Go</div>
+                <div class="menu-item">Window</div>
+                <div class="menu-item">Help</div>
+            </div>
+            <div class="right">
+                <div id="clock"></div>
+            </div>
+        </div>
+
+        <div id="dock">
+            <div class="dock-item" data-app="finder">
+                <img src="assets/icons/finder.png" alt="Finder">
+                <span class="tooltip">Finder</span>
+            </div>
+            <div class="dock-item" data-app="calculator">
+                <img src="assets/icons/calculator.png" alt="Calculator">
+                <span class="tooltip">Calculator</span>
+            </div>
+            <div class="dock-item" data-app="notepad">
+                <img src="assets/icons/notepad.png" alt="Notepad">
+                <span class="tooltip">Notepad</span>
+            </div>
+            <div class="dock-item" data-app="terminal">
+                <img src="assets/icons/terminal.png" alt="Terminal">
+                <span class="tooltip">Terminal</span>
+            </div>
+             <div class="dock-item" data-app="settings">
+                <img src="assets/icons/settings.png" alt="Settings">
+                <span class="tooltip">Settings</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="apps/calculator.js"></script>
+    <script src="apps/notepad.js"></script>
+    <script src="apps/finder.js"></script>
+    <script src="apps/terminal.js"></script>
+    <script src="apps/settings.js"></script>
+</body>
+</html>
